@@ -1,16 +1,42 @@
 {
-	"name": "@rbxts/react",
+	"name": "@hn-studios/react",
+	"version": "1.0.0",
+	"description": "A custom React package for Roblox-TS with HTML and CSS support.",
+	"main": "dist/index.js",
+	"types": "index.d.ts",
+	"files": [
+	  "dist",
+	  "jsx.d.ts",
+	  "htmlTypes.d.ts",
+	  "cssTypes.d.ts"
+	],
+	"scripts": {
+	  "prepare": "pnpm build",
+	  "build": "tsc",
+	  "watch": "tsc -w"
+	},
+	"keywords": [
+	  "roblox-ts",
+	  "react",
+	  "html",
+	  "css",
+	  "transformer"
+	],
+	"author": "Your Name",
+	"license": "MIT",
+	"dependencies": {
+	  "@rbxts/react": "^17.2.3",
+	  "@rbxts/react-roblox": "file:../rbxts-react/packages/react-roblox",
+	  "css-tree": "^3.1.0",
+	  "csstype": "^3.1.3"
+	},
 	"devDependencies": {
-		"@rbxts/compiler-types": "3.0.0-types.0",
-		"@rbxts/types": "^1.0.810",
-		"@typescript-eslint/eslint-plugin": "^7.18.0",
-		"@typescript-eslint/parser": "^7.18.0",
-		"eslint": "^8.57.1",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-prettier": "^5.2.1",
-		"eslint-plugin-roblox-ts": "^0.0.36",
-		"prettier": "^3.3.3",
-		"roblox-ts": "3.0.0",
-		"typescript": "^5.6.2"
+	  "@biomejs/biome": "^1.9.4",
+	  "@rbxts/compiler-types": "3.0.0-types.0",
+	  "@rbxts/types": "^1.0.813",
+	  "@types/css-tree": "^2.3.9",
+	  "@types/node": "^22.10.2",
+	  "roblox-ts": "^3.0.0",
+	  "typescript": "^5.5.3"
 	}
-}
+  }
